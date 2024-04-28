@@ -28,6 +28,7 @@
             background-color: black;
             text-decoration: none;
             color: whitesmoke;
+            align-items: center;
         }
         body {
             display: flex;
@@ -40,30 +41,51 @@
             align-items: center;
             justify-content: center;
         }
-        .card {
+        .img-div {
             padding: 1em;
             color: whitesmoke;
             text-align: center;
         }
-        .card > img {
+        #image {
             width: 70vw;
+        }
+        #img-caption {
+            color: whitesmoke;
+            text-align: center;
         }
         body {
             background: url(./img/background.gif) no-repeat center center fixed;
             background-size: cover;
         }
+        img-div {
+            padding: 10px;
+            margin: 0;
+        }
     </style>
 </head>
 <body>
-    <a style="align-items: center;" class="btn home" href="index.html"><i class="fa-solid fa-house"></i>Trang Home</a>
+    <a class="btn home" href="index.html"><i class="fa-solid fa-house"></i>Trang Home</a>
     <div class="container">
-        <div class="card">
-            <img src="./img/CommunityLearning.PNG">
-            <div>Chứng chỉ</div>
-        </div>
-        <!-- <div class="card">
-            <img src="./img/background.gif">
-        </div> -->
+        <figure id="img-div">
+            <img
+              id="image"
+              src="./img/CommunityLearning.PNG"
+              alt="Community Learning"
+            />
+            <figcaption id="img-caption">
+              I have created video to support people learning math
+            </figcaption>
+          </figure>
+          <!-- <figure id="img-div">
+            <img
+              id="image"
+              src=""
+              alt=""
+            />
+            <figcaption>
+              I have created video to support people learning math
+            </figcaption> -->
+          </figure>
     </div>
 </body>
 </html>
